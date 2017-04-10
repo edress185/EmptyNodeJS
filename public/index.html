@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="https://use.fontawesome.com/345dc5d1fe.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>NOTfilx</title>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">NOTflix</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home Page <span class="sr-only">(current)</span></a></li>
+                <li ><a href="/movies.html" id ="moviebtn">Movies</a></li>
+            </ul>
+            <div class="afterlogged" >
+
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li id ="login"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="/images/movies.jpg" alt="Movie set image">
+            <div class="carousel-caption">
+                <h3>NOTFlix</h3>
+                <p>Let's Start</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="/images/imagecollection.jpg" alt="Image of movie collection">
+            <div class="carousel-caption">
+                <h3>Movie Collection</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="container text-center">
+    <h3>NOTflix</h3><br>
+
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a  href="movies.html"><img src="images/oldmovie.jpg"></a>
+            <div class="caption">
+
+                <a href="movies.html"><h3>Classics</h3></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <a href="movies.html"><img src="images/newmovie.jpg"></a>
+            <div class="caption">
+
+                <a href="movies.html"><h3>Blockbusters</h3></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <img src="images/yours.jpg">
+            <div class="caption">
+
+                <h3>Your collection?!</h3>
+                <p id ="startrate"><a href="/login.html" class="btn btn-primary" role="button">Login</a> <a href="/login.html"
+                                                                                            class="btn btn-default"
+                                                                                            role="button">Register</a>
+                </p>
+                <div id="rateready"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container text-center">
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <img src="images/users.png">
+            <div class="caption">
+
+                <p><a href="#" class="btn btn-primary" role="button">Browse users</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <img src="images/rating.png">
+            <div class="caption">
+                <p><a href="/login.html" class="btn btn-primary" role="button">Start rating !</a></p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <img src="/images/customerservice.png">
+            <div class="caption">
+                <p><a href="/login.html" class="btn btn-primary" role="button">Customer service</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+
+<footer class="footer">
+    <div class="container text-center">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-skype"></i></a>
+    </div><!--End container-->
+
+</footer><!--End footer 2-->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+<script>
+    mocha.ui('bdd');
+</script>
+<script src="js/tesy.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+
+        crossorigin="anonymous"></script>
+<script>
+    try {
+        if (typeof window.initMochaPhantomJS !==
+            "undefined") {
+            mocha.reporter('XUnit');
+            window.initMochaPhantomJS();
+            mocha.run();
+        }
+    } catch (e) {
+        alert(e);
+    }
+</script>
+</body>
+</html>
